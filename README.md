@@ -1,8 +1,11 @@
+<<<<<<< HEAD
+=======
 # Codegenesis
 AI-powered full-stack app generator: Turn natural language prompts into production-ready web apps with backend, frontend, tests, CI/CD, and deploy in minutes.
 
 
 
+>>>>>>> 72107ee8846ae24a865578963eb8e7603402fd70
 # 🚀 CodeGenesis - Modern Full-Stack Blog Platform
 
 A beautiful, feature-rich blog platform and **AI-powered app generator** built with **FastAPI** (backend) and **Next.js** (frontend). Generate, preview, and download full-stack apps from a single prompt!
@@ -168,4 +171,8 @@ MIT License (see LICENSE file)
 
 ---
 
+<<<<<<< HEAD
 **Made with ❤️ by CodeGenesis Team** 
+=======
+**Made with ❤️ by CodeGenesis Team** 
+>>>>>>> 72107ee8846ae24a865578963eb8e7603402fd70
