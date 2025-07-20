@@ -1,0 +1,42 @@
+specs:
+  - name: User
+    description: A registered user of the platform
+    inputs: [username, email, password, full_name, bio, avatar_url]
+    outputs: [user_id, created_at, is_verified, role]
+    methods: [register, login, update_profile, follow, unfollow]
+
+  - name: Post
+    description: A blog post written by a user
+    inputs: [title, content, user_id, tag_names]
+    outputs: [post_id, created_at, updated_at, view_count, is_featured]
+    methods: [create, edit, delete, like, unlike, list, view]
+
+  - name: Comment
+    description: A comment on a post, can be a reply to another comment
+    inputs: [content, user_id, post_id, parent_id]
+    outputs: [comment_id, created_at]
+    methods: [create, list]
+
+  - name: Tag
+    description: A tag for categorizing posts
+    inputs: [name, description, color]
+    outputs: [tag_id, created_at]
+    methods: [create, list]
+
+  - name: Notification
+    description: A notification for user activity
+    inputs: [user_id, type, title, message, related_post_id, related_user_id]
+    outputs: [notification_id, created_at, is_read]
+    methods: [list, mark_read]
+
+features:
+  - authentication
+  - user profiles
+  - user roles
+  - follow system
+  - post CRUD
+  - comments (nested)
+  - tags
+  - likes
+  - notifications
+  - rate limiting 
